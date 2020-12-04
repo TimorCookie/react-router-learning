@@ -24,9 +24,8 @@ class Switch extends Component {
                   : context.match
               }
             })
-            console.log(React.createElement(element, { computedMatch: match }))
             return match
-              ? React.createElement(element, { computedMatch: match })
+              ? React.cloneElement(element, { computedMatch: match })
               : null
           }
         }
