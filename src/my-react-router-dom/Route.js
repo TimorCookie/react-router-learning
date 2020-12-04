@@ -4,11 +4,12 @@ import matchPath from './matchPath';
 
 class Route extends Component {
   constructor(props) {
+    super(props)
     console.log(props)
   }
   render() {
     return (
-      <RouterContext.Provider>
+      <RouterContext.Consumer>
         {
           context => {
             const location = context.location
@@ -46,7 +47,7 @@ class Route extends Component {
             )
           }
         }
-      </RouterContext.Provider>
+      </RouterContext.Consumer>
     );
   }
 }
