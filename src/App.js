@@ -1,10 +1,16 @@
 import React from "react";
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Link,
+//   Switch
+// } from "react-router-dom";
 import {
   BrowserRouter as Router,
   Route,
   Link,
   Switch
-} from "react-router-dom";
+} from "./my-react-router-dom";
 
 import HomePage from './pages/HomePage';
 import UserPage from './pages/UserPage';
